@@ -1,4 +1,72 @@
 @import url("https://fonts.googleapis.com/css?family=Kelly+Slab|Roboto:300,400");
+nav {
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  z-index: 100;
+  background-color: #FFFFFF;
+  line-height: 60px; }
+  nav .menu {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    nav .menu li {
+      width: 20%;
+      list-style-type: none;
+      display: inline-block;
+      padding: 0; }
+      nav .menu li a {
+        text-decoration: none;
+        color: #4B4D4E;
+        text-align: center;
+        display: block;
+        font-size: 22px; }
+    nav .menu .logo-box {
+      position: relative; }
+      nav .menu .logo-box img {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        left: 50%;
+        top: 70%;
+        -webkit-transform: translate(-50%, -30%);
+            -ms-transform: translate(-50%, -30%);
+                transform: translate(-50%, -30%);
+        -webkit-transition: 0.3s all;
+                transition: 0.3s all; }
+        nav .menu .logo-box img.resize {
+          width: 80px;
+          height: 80px; }
+
+@media (max-width: 980px) {
+  nav .menu {
+    width: 100%; } }
+@media (max-width: 650px) {
+  nav .menu {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    nav .menu li {
+      width: 25%; }
+    nav .menu .logo-box {
+      display: none; } }
+@media (max-width: 400px) {
+  nav .menu li a {
+    font-size: 14px;
+    font-weight: 700; } }
 .main-header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -21,7 +89,7 @@
   background-color: #7ABABA; }
   .main-header .banner {
     width: 400px;
-    margin: 50px 0; }
+    margin: 100px 0 50px 0; }
     .main-header .banner img {
       width: 100%; }
   .main-header h1, .main-header p {
@@ -92,10 +160,11 @@
     outline: none;
     width: 100%;
     height: auto; } }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .main-header .banner {
     padding: 10px;
-    width: 100%; }
+    width: 100%;
+    margin: 50px 0; }
   .main-header .slider-box {
     display: none; } }
 .about-section {
