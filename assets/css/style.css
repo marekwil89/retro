@@ -3,7 +3,7 @@ nav {
   position: fixed;
   width: 100%;
   border-bottom: 1px solid gray;
-  z-index: 100;
+  z-index: 120;
   background-color: #FFFFFF;
   line-height: 60px; }
   nav .menu {
