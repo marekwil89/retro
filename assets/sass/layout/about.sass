@@ -1,0 +1,62 @@
+.about-section
+  background-color: $about-bg-color
+  min-height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+  .services
+    margin: 30px auto
+    width: 960px
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .service
+      margin: 20px
+      width: 30%
+
+      figure
+        width: 100%
+
+        img
+          width: 100%
+
+      h4
+        font-size: $large-font
+        text-align: center
+        color: $gray
+
+      h5
+        margin: 10px 0
+        text-align: center
+        font-size: $small-font
+        text-transform: uppercase
+        font-weight: $medium-weight
+
+      h5, p
+        font-family: 'Roboto', sans-serif
+        color: $gray
+
+      p
+        font-weight: $normal-weight
+
+@media (max-width: 980px)
+  .about-section
+    .services
+      flex-wrap: wrap
+      width: 100%
+
+      .service
+        width: 40%
+
+        figure
+          padding: 0 50px
+
+@media (max-width: 550px)
+  .about-section
+    .services
+      .service
+        width: 100%
+        margin: 20px

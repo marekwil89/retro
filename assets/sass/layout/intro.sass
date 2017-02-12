@@ -1,0 +1,49 @@
+.title
+  padding: 20px 0
+  color: $gray
+  font-size: $huge-font
+  text-align: center
+  margin-bottom: 0
+  text-shadow: 1px 2px $title-shadow-color, 3px 4px $gray
+  text-transform: uppercase
+
+.xxx-separation
+  margin: 10px 0
+  font-size: $medium-font
+  text-align: center
+  line-height: 22px
+  font-weight: $heavy-weight
+
+  span
+    width: 45px
+    position: relative
+    display: inline-block
+    color: $gray
+
+    &:after
+      content: ""
+      position: absolute
+      width: 100%
+      right: -100%
+      top: 13px
+      border-top: 2px solid $gray
+
+    &:before
+      content: ""
+      position: absolute
+      width: 100%
+      left: -100%
+      top: 13px
+      border-top: 2px solid $gray
+
+.kicker
+  text-align: center
+  margin: 10px 0
+  font-size: $small-font
+  text-transform: uppercase
+  color: $gray
+
+
+@media (max-width: 460px)
+  .title
+    font-size: $big-font

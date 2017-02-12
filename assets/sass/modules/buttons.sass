@@ -1,0 +1,30 @@
+.btn-filter
+  position: relative
+  border: none
+  font-size: $small-font
+  font-weight: 700
+  padding: 4px 8px 4px 12px
+  margin-left: 12px
+  margin-right: 6px
+  margin-bottom: 4px
+  background-color: $title-shadow-color
+  text-decoration: none
+  cursor: pointer
+  border-bottom-right-radius: 3px
+  border-top-right-radius: 3px
+  box-shadow: 1px 1px 1px rgba($black,0.2)
+
+  &:before
+    content: ""
+    float: left
+    position: absolute
+    top: 0
+    left: -12px
+    width: 0
+    height: 0
+    border-color: rgba($black, 0) $title-shadow-color rgba($black, 0) rgba($black, 0)
+    border-style: solid
+    border-width: 12px 12px 12px 0
+
+  &:focus
+    outline: none

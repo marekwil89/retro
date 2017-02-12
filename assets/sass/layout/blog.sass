@@ -1,0 +1,52 @@
+.blog-section
+  background-color: $blog-bg-color
+
+  .articles
+    width: 960px
+    margin: 0 auto
+    font-family: 'Roboto', sans-serif
+    padding-bottom: 50px
+    
+    article
+      width: 100%
+      display: flex
+      margin: 50px 0
+
+      img
+        width: 400px
+
+    .info
+      padding: 20px
+      color: $gray
+      border: 1px solid transparent
+
+      h4
+        margin-top: 10px
+        font-size: $medium-font
+
+      p
+        font-weight: $normal-weight
+
+        a
+          text-decoration: none
+          color: $gray
+          font-weight: $heavy-weight
+
+
+@media (max-width: 980px)
+  .blog-section
+    .articles
+      padding: 0 20px
+      width: 100%
+
+@media (max-width: 700px)
+  .blog-section
+    .articles
+      article
+        flex-wrap: wrap
+
+        img
+          width: 100%
+
+        .info
+          padding: 0

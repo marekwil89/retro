@@ -1,0 +1,106 @@
+.main-header
+  display: flex
+  justify-content: center
+  align-items: center
+  min-height: 100vh
+  flex-direction: column
+  background-color: $header-bg-color
+  
+  .banner
+    width: 400px
+    margin: 50px 0
+
+    img
+      width: 100%
+
+  h1, p
+    color: $white-light
+    text-align: center
+    text-transform: uppercase
+
+  h1
+    font-size: $large-font
+
+  p
+    font-size: $medium-font
+
+  .slider-box
+    margin: 50px 0
+    display: block
+    width: 960px
+    height: 460px
+    outline: 10px solid $white
+    background: $white
+    position: relative
+    overflow: hidden
+  
+    .arrow
+      cursor: pointer
+      padding: 10px
+      position: absolute
+      background: $white
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 100
+      transition: 0.3s all
+
+      &.left
+        left: 0
+        border-radius: 0 50% 50% 0
+
+      &.right
+        right: 0
+        border-radius: 50% 0 0 50%
+
+      &:hover
+      
+        &.left
+          left: -10px
+
+        &.right
+          right: -10px
+
+      .fa
+        font-size: $large-font
+
+    .slide
+      overflow: hidden
+      width: 100%
+      height: 100%  
+      margin: 0
+      display: none
+      opacity: 0
+
+      &.active
+        animation: show 0.5s ease
+        display: block
+        opacity: 1
+
+      img
+        width: 100%
+
+      figcaption
+        color: $gray
+        text-align: center
+        font-size: $medium-font
+        padding: 12px 0
+        text-transform: uppercase
+        font-weight: $heavy-weight
+
+
+@media (max-width: 1000px)
+  .main-header
+    .slider-box
+      outline: none
+      width: 100%
+      height: auto
+
+@media (max-width: 500px)
+  .main-header
+    .banner
+      padding: 10px
+      width: 100%
+
+    .slider-box
+      display: none
+
